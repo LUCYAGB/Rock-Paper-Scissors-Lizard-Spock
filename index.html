@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,64 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
     <div class="container">
         <div class="scoreboard">
-
+            <div class="title-logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <div class="score">
+                <p>SCORE</p>
+                <h1> 0 </h1>
+            </div>
         </div>
+
+        <!--Create the rock, paper, scissors, lizard, spock buttons-->
+        <div class="hands">
+            <div class="hand rock">
+                <img src="assets/images/rock.png" alt="rock">
+            </div>
+            <div class="hand paper">
+                <img src="assets/images/paper.png" alt="paper">
+            </div>
+            <div class="hand scissors">
+                <img src="assets/images/scissors.png" alt="scissors">
+            </div>
+            <div class="hand lizard">
+                <img src="assets/images/lizard.png" alt="lizard">
+            </div>
+            <div class="hand spock">
+                <img src="assets/images/spock.png" alt="spock">
+            </div>
+            
+        </div>
+
+        <!--Add HTML that will be called in script.js to show the result-->
+        <div class="contest">
+            <div class="playerhand">
+                <h1>YOU CHOSE</h1>
+                <div class="handImageContainer">
+                    <img src="assets/images/rock.png" alt="Player choice">
+                </div>
+            </div>
+            <div class="ref">
+                <div class="decision">
+                    <h1> YOU WIN </h1>
+                </div>
+                <div class="newGame">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand">
+                <h1>AI CHOSE</h1>
+                <div class="handImageContainer">
+                    <img src="assets/images/paper.png" alt="Computer choice">
+                </div>
+            </div>
+        </div>
+        
     </div>
 
-    <!--Create the rock, paper, scissors, lizard, spock buttons-->
-    <div class="hands">
 
-    </div>
 
     <div class="contest">
 
@@ -27,4 +75,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
