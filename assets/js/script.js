@@ -1,0 +1,151 @@
+//Create a dictionary object
+let handOptions = {
+    "rock": "assets/images/rock.png",
+    "paper": "assets/images/paper.png",
+    "scissors": "assets/images/scissors.png",
+    "lizard": "assets/images/lizard.png",
+    "spock": "assets/images/spock.png",
+}
+
+let SCORE = 0;
+
+//Create a function that calls the icons when clicked
+
+function pickPlayerHand(hand) {
+
+    // Hide the current page
+    let hands = document.querySelector(".hands");
+    hands.style.display = "none";
+
+    //Show the result of the hand the player picked in a new page
+    let contest = document.querySelector(".contest");
+    contest.style.display = "flex";
+
+    //Set the player choice
+    document.getElementById("playerPickImage").src = handOptions[hand];
+
+    // Call the computer choice function
+    let computerHand = pickComputerHand();
+    ref(hand, computerHand)
+
+}
+
+function pickComputerHand(hand) {
+    let hands = ["rock", "paper", "scissors", "lizard", "spock"];
+    // Let the computer pick a choice randomly
+    let computerHand = hands[Math.floor(Math.random() * 5)];
+
+    //Set the computer choice
+    document.getElementById("computerPickImage").src = handOptions[computerHand];
+    return computerHand;
+}
+
+function ref(playerHand, computerHand) {
+   if(playerHand == "paper" && computerHand == "scissors") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "paper" && computerHand == "rock")
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   if(playerHand == "paper" && computerHand == "lizard") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "paper" && computerHand == "spock") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "paper" && computerHand == "paper") {
+     setDecision("It's a tie!")
+   }
+   if(playerHand == "paper" && computerHand == "scissors") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "rock" && computerHand == "rock") {
+     setDecision("It's a tie!")
+   }
+   if(playerHand == "rock" && computerHand == "paper") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "rock" && computerHand == "scissors") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "rock" && computerHand == "lizard") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "rock" && computerHand == "spock") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "scisssors" && computerHand == "scissors") {
+     setDecision("It's a tie!")
+   }
+   if(playerHand == "scissors" && computerHand == "rock") {
+     setDecision("YOU LOSE!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "scissors" && computerHand == "paper") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "scissors" && computerHand == "lizard") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "scissors" && computerHand == "spock") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "lizard" && computerHand == "lizard") {
+     setDecision("It's a tie!")
+   }
+   if(playerHand == "lizard" && computerHand == "rock") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "lizard" && computerHand == "paper") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "lizard" && computerHand == "scissors") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "lizard" && computerHand == "spock") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "spock" && computerHand == "spock") {
+     setDecision("It's a tie!")
+   }
+   if(playerHand == "spock" && computerHand == "rock") {
+     setDecision("YOU WIN!")
+     setScore(SCORE + 1)
+   }
+   if(playerHand == "spock" && computerHand == "paper") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "spock" && computerHand == "lizard") {
+     setDecision("YOU LOSE!")
+   }
+   if(playerHand == "spock" && computerHand == "scissors") {
+    setDecision("YOU WIN!")
+    setScore(SCORE + 1)
+   }
+}
+
+// Reverse the previous command from pickPlayerHand()
+function replayGame() {
+    let hands = document.querySelector(".hands");
+    hands.style.display = "flex";
+
+    //Show the result of the hand the player picked in a new page
+    let contest = document.querySelector(".contest");
+    contest.style.display = "none";
+}
+
+function setDecision(decision) {
+   document.querySelector(".decision h1").innerText = decision;
+}
+
+function setScore(score) {
+    SCORE = score;
+    document.querySelector(".score h1").innerText = score;
+}

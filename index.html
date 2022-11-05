@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="fun-games games rock paper scissors lizard spock">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
 </head>
 
 <body>
@@ -26,53 +26,45 @@
         <!--Create the rock, paper, scissors, lizard, spock buttons-->
         <div class="hands">
             <div class="hand rock">
-                <img src="assets/images/rock.png" alt="rock">
+                <img src="assets/images/rock.png" alt="rock" onclick="pickPlayerHand('rock')">
             </div>
             <div class="hand paper">
-                <img src="assets/images/paper.png" alt="paper">
+                <img src="assets/images/paper.png" alt="paper" onclick="pickPlayerHand('paper')">
             </div>
             <div class="hand scissors">
-                <img src="assets/images/scissors.png" alt="scissors">
+                <img src="assets/images/scissors.png" alt="scissors" onclick="pickPlayerHand('scissors')">
             </div>
             <div class="hand lizard">
-                <img src="assets/images/lizard.png" alt="lizard">
+                <img src="assets/images/lizard.png" alt="lizard" onclick="pickPlayerHand('lizard')">
             </div>
             <div class="hand spock">
-                <img src="assets/images/spock.png" alt="spock">
+                <img src="assets/images/spock.png" alt="spock" onclick="pickPlayerHand('spock')">
             </div>
             
         </div>
-
         <!--Add HTML that will be called in script.js to show the result-->
         <div class="contest">
             <div class="playerhand">
                 <h1>YOU CHOSE</h1>
                 <div class="handImageContainer">
-                    <img src="assets/images/rock.png" alt="Player choice">
+                    <img id="playerPickImage" alt="Player choice" src="assets/images/rock.png">
                 </div>
             </div>
             <div class="ref">
                 <div class="decision">
                     <h1> YOU WIN </h1>
                 </div>
-                <div class="newGame">PLAY AGAIN</div>
+                <div class="newGame" onclick="replayGame()">PLAY AGAIN</div>
             </div>
             <div class="computerhand">
                 <h1>AI CHOSE</h1>
                 <div class="handImageContainer">
-                    <img src="assets/images/paper.png" alt="Computer choice">
+                    <img id="computerPickImage" alt="Computer choice" src="assets/images/paper.png">
                 </div>
             </div>
         </div>
-        
     </div>
-
-
-
-    <div class="contest">
-
-    </div>
-
+      
     <script src="assets/js/script.js"></script>
 </body>
 
