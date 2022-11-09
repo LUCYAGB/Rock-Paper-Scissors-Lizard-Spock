@@ -35,7 +35,8 @@ This game is accessible to anyone and also has the ability to play against the c
 
 1. Google Fonts:
    * The "**Roboto**" font was used throughout the project. This was imported 
-    using Google fonts into the style.css file.
+    using Google fonts into the style.css file. The font sans-serif was used
+    as the browser default font.
 
 1. Hover.css:
    * This feature was used to give a transform effect on the hands icons thereby improving user experience/interactivity.
@@ -48,4 +49,15 @@ This game is accessible to anyone and also has the ability to play against the c
 
 ### Credits
 
-Code
+   * The game icons (rock, paper, scissors, lizard, spock) all enclosed(*class='hands'*) in the index.html file were all saved from [rwest88.github.io](rwest88.github.io).
+   * Logo:
+      * The project logo is credited to [geekcals.com](www.geekcals.com).
+   * Code Institute Gitpod template  
+
+### Resources
+
+   * Code Institute materials on Comparative Programming and JavaScript Essentials.
+   
+### Acknowledgements
+   * My Mentor for his continous helpful feeedback.
+   * Tutor support at Code Institute for their support.      
