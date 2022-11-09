@@ -23,7 +23,29 @@ This game is accessible to anyone and also has the ability to play against the c
    * Ability to play against the computer.
    * Have interactivity within the page.
 
+### Technologies Used
 
+#### Languages Used
 
+* HTML5
+* CSS3
+* JAVASCRIPT
 
+#### Libraries & Programs Used
 
+1. Google Fonts:
+   * The "**Roboto**" font was used throughout the project. This was imported 
+    using Google fonts into the style.css file.
+
+1. Hover.css:
+   * This feature was used to give a transform effect on the hands icons thereby improving user experience/interactivity.
+
+1. Git: 
+   * Git was used for version control by utilizing the Gitpod terminal commands (git add, git commit -m "").
+
+1. GitHub:
+   * Also used for version control, deployment and hosting of this project.
+
+### Credits
+
+Code
