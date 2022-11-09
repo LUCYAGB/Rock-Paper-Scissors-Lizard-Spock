@@ -52,14 +52,16 @@ This game is accessible to anyone and also has the ability to play against the c
    ![Pick Options](documentation/contest-area.PNG)
 
 * The Play Again Button
-   * This button, when clicked, takes the player back to the main pick where they have 
+   * This button, when clicked, redirects the player back to the home page where the player will be allowed to play again. 
    the option of picking another hand or retrying the game.   
 
-### Preview of the Game Page on my PC
+#### Preview of the Game Page on my PC
 
 ![Pick Options](documentation/Preview-hands.PNG)
 
 ![Pick Options](documentation/preview-contest.PNG)
+
+#### Features Left to Implement
 
 ### Technologies Used
 
@@ -84,6 +86,28 @@ This game is accessible to anyone and also has the ability to play against the c
 
 1. GitHub:
    * Also used for version control, deployment and hosting of this project.
+
+1. Amiresponsive
+   * The amiresponsive was used to test how responsive the game design looks across different browsers.  
+
+1. Google Developer Tools
+   * To troubleshoot and test features, check responsiveness and accessibility.   
+
+### Testing   
+
+#### W3C Validator
+
+The [W3C](https://validator.w3.org/) validator was used to validate the index.html and styles.css files.
+
+   * HTML
+      * No errors were found when passed through the official [W3C validator](https://validator.w3.org/nu/#textarea).
+
+   * CSS
+      * No errors were found when passed through the official [Jigsaw validator](https://validator.w3.org/nu/#textarea).   
+
+   * JAVASCRIPT
+      * 
+
 
 ### Credits
 
