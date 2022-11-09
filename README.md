@@ -100,14 +100,47 @@ This game is accessible to anyone and also has the ability to play against the c
 The [W3C](https://validator.w3.org/) validator was used to validate the index.html and styles.css files.
 
    * HTML
-      * No errors were found when passed through the official [W3C validator](https://validator.w3.org/nu/#textarea).
+      * No errors were found when passed through the official [W3C validator](index.html).
 
    * CSS
-      * No errors were found when passed through the official [Jigsaw validator](https://validator.w3.org/nu/#textarea).   
+      * No errors were found when passed through the official [Jigsaw validator](assets/css/style.css).   
 
-   * JAVASCRIPT
-      * 
+#### JavaScript Validator
 
+[Jshint](https://jshint.com/) was used to validate the script.js file.
+   * Warnings:
+   * Errors:
+
+#### Lighthouse
+   * Lighthouse within the Chrome Developer Tools was used to test the performance, accessibility, best practices and SEO of the game.
+
+##### Desktop Analysis
+ Achieved a score of 100% in three(3) except Best Practices which has a score of 92%.
+    * Reason
+
+![Lighthouse Desktop](documentation/lighthouse-desktop.PNG)
+
+##### Mobile Analysis
+       
+
+The game was tested using the following viewports:
+   * Desktop: 1600x992px
+   * Laptop: 1280x802px
+   * Tablet: 768x1024px
+   * Mobile: 320x480px
+
+### Deployment
+
+The game was deployed using GitHub Pages - 
+
+Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+1. Go to the repository for this project
+1. Click the settings button.
+1. Select pages in the left hand navigation menu.
+1. From the source dropdown select main branch and press save.
+1. The site has now been deployed, this process may take a few minutes before the site goes live.
 
 ### Credits
 
