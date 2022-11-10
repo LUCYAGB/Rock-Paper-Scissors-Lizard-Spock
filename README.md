@@ -6,7 +6,7 @@
 This game is an interesting game in which each player simultaneously forms one of five shapes with an outstretched hand. These shapes are "rock", "paper", "scissors" "lizard" and "spock". 
 This game is accessible to anyone and also has the ability to play against the computer. It is made to be accessible on a range of devices.
 
-[View the live project here.](http)
+[View this site here](https://lucyagb.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
 ![inserting an image link](documentation/Game-Preview.PNG)
 
@@ -137,7 +137,7 @@ The game was tested using the following viewports:
 
 The game was deployed using GitHub Pages - 
 
-Deploy the site using GitHub Pages:
+Deploy the site using GitHub Pages: [View this site here](https://lucyagb.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
 1. Login (or signup) to Github.
 1. Go to the repository for this project
