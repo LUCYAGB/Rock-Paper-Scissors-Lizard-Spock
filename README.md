@@ -125,7 +125,7 @@ The [W3C](https://validator.w3.org/) validator was used to validate the index.ht
  Achieved a score of 100% in three(3) except Best Practices which has a score of 92%.
     * Reason
 
-![Lighthouse Desktop](documentation/lighthouse-desktop.PNG)
+![Lighthouse Desktop](documentation/desktop-lighthouse.PNG)
 
 ##### Mobile Analysis
  Achieved a score of 100% in Accessibility and SEO. 
