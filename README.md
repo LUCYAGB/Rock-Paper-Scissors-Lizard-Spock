@@ -59,7 +59,11 @@ This game is accessible to anyone and also has the ability to play against the c
 
 ![Pick Options](documentation/preview-contest.PNG)
 
-#### Features Left to Implement
+#### Future features to implement
+   * Implement the maximum number of tries before the game ends.
+   * Ability to play with other players as a team.
+   * Add the rules of the game.
+   * Be able to view position of the player amongst winners board.
 
 ### Technologies Used
 
