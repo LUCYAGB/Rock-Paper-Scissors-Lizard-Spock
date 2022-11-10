@@ -19,11 +19,11 @@ let currentTryCount = 0;
  * @param {string} hand The option selected by user.
  */
 function pickPlayerHand(hand) {
-  if (currentTryCount >= MAX_TRIES) {
-    return;
-  }
+    if (currentTryCount >= MAX_TRIES) {
+        return;
+    }
 
-  currentTryCount++;
+    currentTryCount++;
 
     // Hide the current page
     let hands = document.querySelector(".hands");
@@ -56,100 +56,100 @@ function pickComputerHand() {
 }
 
 function referee(playerHand, computerHand) {
-  if (playerHand == computerHand) {
-    setDecision("It's a tie!");
-    return;
-  }
+    if (playerHand == computerHand) {
+        setDecision("It's a tie!");
+        return;
+    }
 
-   if(playerHand == "paper" && computerHand == "scissors") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "paper" && computerHand == "rock") {
-     setDecision("YOU WIN!");
-     setScore();
-     console.log('paper rock');
-   }
-   if(playerHand == "paper" && computerHand == "lizard") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "paper" && computerHand == "spock") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "paper" && computerHand == "paper") {
-     setDecision("It's a tie!");
-   }
-   if(playerHand == "paper" && computerHand == "scissors") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "rock" && computerHand == "rock") {
-     setDecision("It's a tie!");
-   }
-   if(playerHand == "rock" && computerHand == "paper") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "rock" && computerHand == "scissors") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "rock" && computerHand == "lizard") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "rock" && computerHand == "spock") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "scisssors" && computerHand == "scissors") {
-     setDecision("It's a tie!");
-   }
-   if(playerHand == "scissors" && computerHand == "rock") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "scissors" && computerHand == "paper") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "scissors" && computerHand == "lizard") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "scissors" && computerHand == "spock") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "lizard" && computerHand == "lizard") {
-     setDecision("It's a tie!");
-   }
-   if(playerHand == "lizard" && computerHand == "rock") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "lizard" && computerHand == "paper") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "lizard" && computerHand == "scissors") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "lizard" && computerHand == "spock") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "spock" && computerHand == "spock") {
-     setDecision("It's a tie!");
-   }
-   if(playerHand == "spock" && computerHand == "rock") {
-     setDecision("YOU WIN!");
-     setScore();
-   }
-   if(playerHand == "spock" && computerHand == "paper") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "spock" && computerHand == "lizard") {
-     setDecision("YOU LOSE!");
-   }
-   if(playerHand == "spock" && computerHand == "scissors") {
-    setDecision("YOU WIN!");
-    setScore();
-   }
+    if (playerHand == "paper" && computerHand == "scissors") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "paper" && computerHand == "rock") {
+        setDecision("YOU WIN!");
+        setScore();
+        console.log('paper rock');
+    }
+    if (playerHand == "paper" && computerHand == "lizard") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "paper" && computerHand == "spock") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "paper" && computerHand == "paper") {
+        setDecision("It's a tie!");
+    }
+    if (playerHand == "paper" && computerHand == "scissors") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "rock" && computerHand == "rock") {
+        setDecision("It's a tie!");
+    }
+    if (playerHand == "rock" && computerHand == "paper") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "rock" && computerHand == "scissors") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "rock" && computerHand == "lizard") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "rock" && computerHand == "spock") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "scisssors" && computerHand == "scissors") {
+        setDecision("It's a tie!");
+    }
+    if (playerHand == "scissors" && computerHand == "rock") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "scissors" && computerHand == "paper") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "scissors" && computerHand == "lizard") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "scissors" && computerHand == "spock") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "lizard" && computerHand == "lizard") {
+        setDecision("It's a tie!");
+    }
+    if (playerHand == "lizard" && computerHand == "rock") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "lizard" && computerHand == "paper") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "lizard" && computerHand == "scissors") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "lizard" && computerHand == "spock") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "spock" && computerHand == "spock") {
+        setDecision("It's a tie!");
+    }
+    if (playerHand == "spock" && computerHand == "rock") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
+    if (playerHand == "spock" && computerHand == "paper") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "spock" && computerHand == "lizard") {
+        setDecision("YOU LOSE!");
+    }
+    if (playerHand == "spock" && computerHand == "scissors") {
+        setDecision("YOU WIN!");
+        setScore();
+    }
 }
 
 // Reverse the previous command from pickPlayerHand()
@@ -163,7 +163,7 @@ function replayGame() {
 }
 
 function setDecision(decision) {
-   document.querySelector(".decision h1").innerText = decision;
+    document.querySelector(".decision h1").innerText = decision;
 }
 
 function setScore() {

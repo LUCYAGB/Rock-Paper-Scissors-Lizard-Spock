@@ -19,6 +19,19 @@ This game is accessible to anyone and also has the ability to play against the c
    * Ability to play against the computer.
    * Have interactivity within the page.
 
+### Rules of the game
+  * Scissors cuts paper
+  * Paper covers Rock
+  * Rock crushes Lizard
+  * Lizard poisons Spock
+  * Spock smashes Scissors
+  * Scissors decapitates Lizard
+  * Lizard eats paper
+  * Paper disproves Spock
+  * Spock vapourizes Rock
+  * Rock crushes scissors
+
+  
 ### Features
 
 #### Existing Features
@@ -34,11 +47,7 @@ This game is accessible to anyone and also has the ability to play against the c
    from rock, paper, scissors, lizard or spock. This feature is responsive when 
    hovered on and leads to a different page when one of the icons is clicked.
 
-   ![Pick Options](documentation/hands-options.PNG)
-
-* The Rules Section
-   * This section lays out the rules of the game, which new users can familiarise with
-   before or while playing the game.   
+   ![Pick Options](documentation/hands-options.PNG)   
 
 * The Contest Area
    * This section does not display immediately the page loads, rather it is prompted
