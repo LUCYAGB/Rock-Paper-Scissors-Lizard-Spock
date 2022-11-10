@@ -1,18 +1,15 @@
 # Rock Paper Scissors Lizard Spock Game
 
-* [Description](Description)
-
 ### Description
 This game is an interesting game in which each player simultaneously forms one of five shapes with an outstretched hand. These shapes are "rock", "paper", "scissors" "lizard" and "spock". 
 This game is accessible to anyone and also has the ability to play against the computer. It is made to be accessible on a range of devices.
 
 [View this site here](https://lucyagb.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
-![inserting an image link](documentation/Game-Preview.PNG)
+![inserting an image link](documentation/viewports.PNG)
 
 ### User Experience (UX)
 *  First Time Visitor Goals
-   * Understand what the game is about using the rules guide.
    * Be able to navigate the game page.
    * Be able to interact with the game.
 
@@ -60,8 +57,7 @@ This game is accessible to anyone and also has the ability to play against the c
 ![Pick Options](documentation/preview-contest.PNG)
 
 #### Future features to implement
-   * Implement the maximum number of tries before the game ends.
-   * Ability to play with other players as a team.
+   * Add a message for the player when they exceed maximum number of tries.
    * Add the rules of the game.
    * Be able to view position of the player amongst winners board.
 
@@ -72,6 +68,13 @@ This game is accessible to anyone and also has the ability to play against the c
 * HTML5
 * CSS3
 * JAVASCRIPT
+
+### Color Scheme
+
+The following colors were used for the design of the game:
+   * Play Again Button Hover effect : rgb(200, 196, 196)
+   * Borders : rgb(24, 8, 8);
+   * Container: #030303 0%, #e4e4eb 100%
 
 #### Libraries & Programs Used
 
@@ -112,8 +115,8 @@ The [W3C](https://validator.w3.org/) validator was used to validate the index.ht
 #### JavaScript Validator
 
 [Jshint](https://jshint.com/) was used to validate the script.js file.
-   * Warnings:
-   * Errors:
+   * Warnings: Had 12 warnings. 	'let' and 'const' are available in ES6. It also stated that there are 2 unused variables, however these are being used.
+   
 
 #### Lighthouse
    * Lighthouse within the Chrome Developer Tools was used to test the performance, accessibility, best practices and SEO of the game.
@@ -125,7 +128,18 @@ The [W3C](https://validator.w3.org/) validator was used to validate the index.ht
 ![Lighthouse Desktop](documentation/lighthouse-desktop.PNG)
 
 ##### Mobile Analysis
-       
+ Achieved a score of 100% in Accessibility and SEO. 
+ Scored 96% in Performance for the following reasons:
+   * Serve image in next generation format
+   * Properly size images
+   * Images not having explicit width and height
+ Scored 92% in best practices for the following reasons:
+   * Displays images with incorrect aspect ratio
+
+      * All these will be rectified in future implementation.
+
+ 
+![Lighthouse Desktop](documentation/Mobile-lighthouse.PNG)
 
 The game was tested using the following viewports:
    * Desktop: 1600x992px
