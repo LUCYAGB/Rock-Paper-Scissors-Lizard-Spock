@@ -1,7 +1,5 @@
 # Rock Paper Scissors Lizard Spock Game
 
-## CONTENTS
-
 * [Description](Description)
 
 ### Description
@@ -100,10 +98,12 @@ This game is accessible to anyone and also has the ability to play against the c
 The [W3C](https://validator.w3.org/) validator was used to validate the index.html and styles.css files.
 
    * HTML
-      * No errors were found when passed through the official [W3C validator](index.html).
+      * No errors were found when passed through the official W3C validator
+       ![W3C validator](documentation/html-validation.PNG)
 
    * CSS
-      * No errors were found when passed through the official [Jigsaw validator](assets/css/style.css).   
+      * No errors were found when passed through the official Jigsaw Validator
+       ![W3C validator](documentation/css-validation.PNG)
 
 #### JavaScript Validator
 

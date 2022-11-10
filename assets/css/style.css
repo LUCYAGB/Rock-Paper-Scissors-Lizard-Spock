@@ -116,22 +116,6 @@ body {
     justify-content: center;
 }
 
-.rules {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px 20px;
-    margin-left: 5%;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    position: relative;
-    width: 20vw;
-    height: 10vh;
-    right: 30px;
-    border: 1px solid rgb(24, 8, 8);
-    border-radius: 4px;
-    background: tranparent;
-}
-
 .referee {
    display: flex;
    flex-direction: column;
@@ -160,6 +144,8 @@ body {
     transform: translate3d(0px, -2px, 0px);
 }
 
+
+
 @media (max-width: 320px) {
     .scoreboard {
         width: 250px;
@@ -183,15 +169,14 @@ body {
         height: 170px;
     }
 
-    .contest img {
-        width: 100px;
-        height: 90px;
+    .playerhand {
+        height: 30px;
+    }
+    
+    .contest {
+        display: flex;
+        
     }
 
-    .contest {
-        width: 100px;
-        margin-right: 250px;
-    }
     
 }
-    
