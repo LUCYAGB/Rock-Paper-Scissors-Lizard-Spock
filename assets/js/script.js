@@ -37,7 +37,7 @@ function pickPlayerHand(hand) {
 
     // Call the computer choice function
     let computerHand = pickComputerHand();
-    ref(hand, computerHand)
+    referee(hand, computerHand)
 }
 
 // 
@@ -87,10 +87,10 @@ function pickComputerHand() {
     return computerHand;
 }
 
-function ref(playerHand, computerHand) {
+function referee(playerHand, computerHand) {
   if (playerHand == computerHand) {
     setDecision("It's a tie!");
-    return
+    return;
   }
 
   playerWin = false;
